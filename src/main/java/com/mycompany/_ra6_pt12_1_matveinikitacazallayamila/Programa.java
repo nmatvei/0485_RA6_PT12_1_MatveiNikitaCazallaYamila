@@ -27,9 +27,9 @@ public class Programa {
         String data = "20/04/2003";
         String mail = "ycazalla1@gmail.com";
         String hora = "26:00";
-        String contrasenya = "";
+        String contrasenya = "aboGado123%";
         
-        if (validacioHora(hora)) {
+        if (validacioContrasenya(contrasenya)) {
             System.out.println("Format vàlid.");
         } else {
             System.out.println("Format invàlid.");
@@ -74,7 +74,7 @@ public class Programa {
     }
     
     public static boolean validacioContrasenya(String contrasenya) {
-        return contrasenya.matches("^([a-z](?=[\\w.-])|[A-Z](?=)){8,}$");
+        return contrasenya.matches("^(?=^.*[a-z])(?=^.*[A-Z])(?=^.*\\d)(?=^.*[^a-zA-Z0-9]).{8,}$");
     }
     
 }
