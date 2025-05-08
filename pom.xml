@@ -10,4 +10,5 @@
         <maven.compiler.release>23</maven.compiler.release>
         <exec.mainClass>com.mycompany._ra6_pt12_1_matveinikitacazallayamila.Programa</exec.mainClass>
     </properties>
+    <name>0485_RA6_PT12_1_MatveiNikitaCazallaYamila</name>
 </project>
