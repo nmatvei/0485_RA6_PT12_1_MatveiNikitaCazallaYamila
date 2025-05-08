@@ -23,11 +23,11 @@ public class Programa {
         System.out.println("PROVES PER VEURE LES EXPRESSIONS REGULARS");
         
         // Comprovació de les dates
-        String data1 = "20/04/2003";    // vàlid
-        String data2 = "31/04/06";      // vàlid
-        String data3 = "33/07/2009";    // invàlid
-        String data4 = "15/12/013";     // invàlid
-        String data5 = "16/9/2013";     // invàlid
+        String data1 = "20/04/2003";
+        String data2 = "31/04/06";
+        String data3 = "33/07/2009";
+        String data4 = "15/12/013";
+        String data5 = "16/9/2013";
         System.out.println("\nProvem si les següents dates tenen un format correcte:");
         System.out.println(data1 + "? " + validacioData(data1));
         System.out.println(data2 + "? " + validacioData(data2));
@@ -36,16 +36,16 @@ public class Programa {
         System.out.println(data5 + "? " + validacioData(data5));
         
         // Comprovació dels correus electrònics
-        String mail1 = "josep.garcia@example.com";     // vàlid
-        String mail2 = "anna-marti_89@correu.cat";     // vàlid
-        String mail3 = "usuari123@domini.net";         // vàlid
-        String mail4 = "usuari@empresa.tech";          // vàlid
-        String mail5 = "josep.garcia@";                // invàlid
-        String mail6 = "@example.com";                 // invàlid
-        String mail7 = "nom@domini";                   // invàlid
-        String mail8 = "nom@domini.c";                 // invàlid
-        String mail9 = "usuari@@domini.com";           // invàlid
-        String mail10 = "nom amb espai@domini.com";    // invàlid
+        String mail1 = "josep.garcia@example.com";
+        String mail2 = "anna-marti_89@correu.cat";
+        String mail3 = "usuari123@domini.net";
+        String mail4 = "usuari@empresa.tech";
+        String mail5 = "josep.garcia@";
+        String mail6 = "@example.com";
+        String mail7 = "nom@domini";
+        String mail8 = "nom@domini.c";
+        String mail9 = "usuari@@domini.com";
+        String mail10 = "nom amb espai@domini.com";
 
         System.out.println("\nComprovació dels correus electrònics:");
         System.out.println(mail1 + " ? " + validacioMail(mail1));
@@ -60,16 +60,16 @@ public class Programa {
         System.out.println(mail10 + " ? " + validacioMail(mail10));
 
         // Comprovació de les hores
-        String hora1 = "00:00";    // vàlida
-        String hora2 = "12:30";    // vàlida
-        String hora3 = "23:59";    // vàlida
-        String hora4 = "07:05";    // vàlida
-        String hora5 = "24:00";    // invàlida
-        String hora6 = "12:60";    // invàlida
-        String hora7 = "3:15";     // invàlida
-        String hora8 = "15:5";     // invàlida
-        String hora9 = "25:00";    // invàlida
-        String hora10 = "12-30";   // invàlida
+        String hora1 = "00:00";
+        String hora2 = "12:30";
+        String hora3 = "23:59";
+        String hora4 = "07:05";
+        String hora5 = "24:00";
+        String hora6 = "12:60";
+        String hora7 = "3:15";
+        String hora8 = "15:5";
+        String hora9 = "25:00";
+        String hora10 = "12-30";
 
         System.out.println("\nComprovació de les hores:");
         System.out.println(hora1 + " ? " + validacioHora(hora1));
@@ -84,16 +84,16 @@ public class Programa {
         System.out.println(hora10 + " ? " + validacioHora(hora10));
 
         // Comprovació de les contrasenyes
-        String pass1 = "Abcdef1!";       // vàlida
-        String pass2 = "Hola1234@";      // vàlida
-        String pass3 = "A1b2c3d4!";      // vàlida
-        String pass4 = "1234abcdE*";     // vàlida
-        String pass5 = "abcdefg1!";      // invàlida
-        String pass6 = "ABCDEFG1!";      // invàlida
-        String pass7 = "Abcdefgh!";      // invàlida
-        String pass8 = "Abcdefg1";       // invàlida
-        String pass9 = "A1b!";           // invàlida
-        String pass10 = "12345678";      // invàlida
+        String pass1 = "Abcdef1!";
+        String pass2 = "Hola1234@";
+        String pass3 = "A1b2c3d4!";
+        String pass4 = "1234abcdE*";
+        String pass5 = "abcdefg1!";
+        String pass6 = "ABCDEFG1!";
+        String pass7 = "Abcdefgh!";
+        String pass8 = "Abcdefg1";
+        String pass9 = "A1b!";
+        String pass10 = "12345678";
 
         System.out.println("\nComprovació de les contrasenyes:");
         System.out.println(pass1 + " ? " + validacioContrasenya(pass1));
@@ -106,8 +106,6 @@ public class Programa {
         System.out.println(pass8 + " ? " + validacioContrasenya(pass8));
         System.out.println(pass9 + " ? " + validacioContrasenya(pass9));
         System.out.println(pass10 + " ? " + validacioContrasenya(pass10));
-
-        
     }
     
     /**
